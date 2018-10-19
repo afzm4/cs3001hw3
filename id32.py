@@ -1,9 +1,10 @@
 #!/usr/bin/env python2
 # -*- coding: utf-8 -*-
 """
-Created on Thu Oct 18 23:41:58 2018
-
-@author: root
+Author: Andrew Floyd
+Date: 10/18/2018
+Course: CS3001: Intro to Data Science
+File Description: File for weather ID3 tree
 """
 
 from id3 import Id3Estimator, export_text
@@ -28,8 +29,6 @@ X = np.array([["sunny", "hot", "high", "false"],
               ["overcast", "mild", "high", "true"],
               ["overcast", "hot", "normal", "false"],
               ["rainy", "mild", "high", "true"]])
-              
-              
 
 y = np.array(["(no)",
               "(no)",

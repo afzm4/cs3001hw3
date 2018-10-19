@@ -1,9 +1,10 @@
 #!/usr/bin/env python2
 # -*- coding: utf-8 -*-
 """
-Created on Tue Oct 16 23:55:28 2018
-
-@author: root
+Author: Andrew Floyd
+Date: 10/18/2018
+Course: CS3001: Intro to Data Science
+File Description: File for basketball ID3 tree
 """
 
 from id3 import Id3Estimator, export_text
@@ -18,9 +19,7 @@ X = np.array([["home", "out", "1-NBC"],
               ["away", "out", "2-ESPN"],
               ["away", "out", "3-FOX"],
               ["home", "out", "1-NBC"],
-              ["away", "out", "4-ABC"]])
-              
-              
+              ["away", "out", "4-ABC"]])  
 
 y = np.array(["(win)",
               "(lose)",
