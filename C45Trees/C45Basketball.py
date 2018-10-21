@@ -1,7 +1,6 @@
-#!/usr/bin/env python2
 # -*- coding: utf-8 -*-
 """
-Created on Sat Oct 20 20:09:34 2018
+Created on Sat Oct 20 18:07:07 2018
 
 @author: root
 """
@@ -11,21 +10,14 @@ def create_test_set():
     '''
     '''
     data_set = [
-        ['Sunny', 'Hot', 'High', 'False', 'NO'],
-        ['Sunny', 'Hot', 'High', 'True', 'NO'], 
-        ['Overcast', 'Hot', 'High', 'False', 'YES'], 
-        ['Rainy', 'Cool', 'Normal', 'False', 'YES'],
-        ['Rainy', 'Cool', 'Normal', 'True', 'NO'],
-        ['Overcast', 'Cool', 'Normal', 'True', 'YES'], 
-        ['Sunny', 'Mild', 'High', 'False', 'NO'],
-        ['Sunny', 'Cool', 'Normal', 'False', 'YES'],
-        ['Rainy', 'Mild', 'Normal', 'False', 'YES'],
-        ['Sunny', 'Mild', 'Normal', 'True', 'YES'],
-        ['Overcast', 'Mild', 'High', 'True', 'YES'], 
-        ['Overcast', 'Hot', 'Normal', 'False', 'YES'], 
-        ['Rainy', 'Mild', 'High', 'False', 'YES'],
+        ['Home', 'Out', '1-NBC', 'Win'], 
+        ['Home', 'In', '1-NBC', 'Lose'], 
+        ['Away', 'Out', '2-ESPN', 'Win'], 
+        ['Away', 'Out', '3-FOX', 'Win'], 
+        ['Home', 'Out', '1-NBC', 'Win'], 
+        ['Away', 'Out', '4-ABC', 'Win']
         ]
-    labels = ['Outlook', 'Temperature', 'Humidity', 'Windy', 'Play?']
+    labels = ['Home/Away', 'AP-top25', 'Media', 'Win/Lose']
     return (data_set, labels)
 
 def get_majority_class(class_list):
